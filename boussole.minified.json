@@ -1,0 +1,9 @@
+{
+    "SOURCES_PATH": "sources/sass/scss",
+    "LIBRARY_PATHS": [],
+    "TARGET_PATH": "sources/minified-css",
+    "OUTPUT_STYLES": "compressed",
+    "SOURCE_COMMENTS": false,
+    "SOURCE_MAP": false,
+    "EXCLUDES": []
+}

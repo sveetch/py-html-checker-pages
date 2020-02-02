@@ -1,0 +1,38 @@
+{% extends "skeleton.html" %}
+
+{% block head_css -%}{% assets CSS_BUNDLE %}
+    <link rel="stylesheet" href="{{ page_relative_position }}{{ ASSET_URL }}">
+{% endassets %}{%- endblock head_css %}
+
+{% block head_title %}Styleguide - {{ super() }}{% endblock head_title %}
+
+{%- block content -%}
+<div class="page-content styleguide">
+    <h1>Styleguide</h1>
+
+    <div class="styleguide__block styleguide__palette">
+        <h2>Palette</h2>
+
+        <div class="styleguide__items">
+            {% for item in STYLEGUIDE.palette %}
+                <div class="styleguide__palette-item styleguide__palette-item--{{ item }}">
+                    <div class="styleguide__palette-color"></div>
+                    <p class="styleguide__palette-code"></p>
+                    <p class="styleguide__palette-name">{{ item }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="styleguide__block styleguide__badges">
+        <h2>Badges</h2>
+
+        <div class="styleguide__items">
+            <span class="badge">default</span>
+            {% for item in STYLEGUIDE.palette %}
+                <span class="badge badge--{{ item }}">{{ item }}</span>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{%- endblock content -%}

@@ -1,0 +1,20 @@
+/*
+ * Page header component
+ */
+
+.page-header{
+    padding: 1rem;
+    color: $clear;
+    background: $slate;
+
+    h1{
+        margin: 0;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        //@include media('>large') {
+        //    font-size: 1.4rem;
+        //}
+    }
+}

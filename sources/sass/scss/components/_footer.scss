@@ -1,0 +1,40 @@
+/*
+ * Page footer component
+ */
+
+.page-footer{
+    color: $slate;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background: $clear;
+    border-top: $onepixel solid darken($lightest, 5%);
+
+    .credits{
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .metas {
+        background: $lightest;
+
+        & > ul{
+            display: flex;
+            margin: 0;
+            padding: 0.5rem 1rem;
+            list-style-type: none;
+            border-bottom: $onepixel solid $smoke;
+
+            & > li {
+                @include sv-flex(0, 0, auto);
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8rem;
+
+                strong {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+/*
+ * Colors settings
+ *
+ * Largely inspired from template:
+ * https://demo.bootstrapious.com/admin-premium/1-4-5/components-cards.html
+ * And maybe https://circleci.com/ from Github CI
+ */
+
+// Named colors
+// ---------
+$clear: #ffffff;
+$lightest: #f8f9fa;
+$light: #eef5f9;
+$smoke: #e3e3e3;
+$slate: #2f333e;
+$dark: #343a40;
+$darkest: #000000;
+$primary: #007bff;
+$secondary: #6c757d;
+$debug: $secondary;
+$success: #28a745;
+$info: #17a2b8;
+$error: #dc3545;
+$warning: #ff9507;
+
+$palette: (
+    clear: $clear,
+    lightest: $lightest,
+    light: $light,
+    smoke: $smoke,
+    slate: $slate,
+    dark: $dark,
+    darkest: $darkest,
+    primary: $primary,
+    secondary: $secondary,
+    debug: $debug,
+    info: $info,
+    success: $success,
+    error: $error,
+    warning: $warning,
+);

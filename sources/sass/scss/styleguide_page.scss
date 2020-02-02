@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+// Import everything from the main stylesheet to avoid to update it again along
+// its changes
+@import "main";
+
+// Styleguide specific stylesheet
+@import "components/styleguide";
+

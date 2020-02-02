@@ -1,0 +1,68 @@
+/*
+ * Summary page
+ *
+ */
+
+.summary-detail {
+    .index{
+        margin: 2rem 1rem 2rem 1rem;
+
+        & > ul{
+            $list-selector: &;
+
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            & > li{
+                color: $slate;
+
+                a{
+                    display: block;
+                    padding: 1rem 1.5rem 0.8rem;
+                    color: inherit;
+                    background: $clear;
+
+                    span{
+                        display: block;
+                        font-family: $font-family-monospace;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                    }
+
+                    &:hover{
+                        text-decoration: none;
+                        background: scale-color($smoke, $lightness: 80%);
+                    }
+                }
+
+                & + li{
+                    border-top: $onepixel solid $smoke;
+                }
+
+                .counters{
+                    display: block;
+                    margin: 0.3rem 0 0;
+                    padding: 0;
+                    list-style-type: none;
+
+                    li{
+                        display: inline-block;
+                        font-size: 0.8rem;
+
+                        & + li{
+                            margin-left: 0.5rem;
+
+                            &::before{
+                                content: "•";
+                                display: inline-block;
+                                margin-right: 0.3rem;
+                                color: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

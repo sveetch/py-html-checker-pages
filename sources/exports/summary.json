@@ -1,0 +1,76 @@
+{
+    "statistics": {
+        "warnings": 12,
+        "infos": 0,
+        "debugs": 1,
+        "errors": 10
+    },
+    "paths": [
+        {
+            "statistics": {
+                "warnings": 1,
+                "infos": 0,
+                "debugs": 0,
+                "errors": 3
+            },
+            "name": "/home/emencia/projects/apps/PyHtmlChecker/tests/data_fixtures/html/invalid.warning.html",
+            "path": "path-1.html"
+        },
+        {
+            "statistics": {
+                "warnings": 8,
+                "infos": 0,
+                "debugs": 0,
+                "errors": 0
+            },
+            "name": "https://www.emencia.com/fr/",
+            "path": "path-2.html"
+        },
+        {
+            "statistics": {
+                "warnings": 0,
+                "infos": 0,
+                "debugs": 1,
+                "errors": 0
+            },
+            "name": "/home/emencia/projects/apps/PyHtmlChecker/tests/data_fixtures/html/valid.basic.html",
+            "path": "path-3.html"
+        },
+        {
+            "statistics": {
+                "warnings": 1,
+                "infos": 0,
+                "debugs": 0,
+                "errors": 4
+            },
+            "name": "http://perdu.com/",
+            "path": "path-4.html"
+        },
+        {
+            "statistics": {
+                "warnings": 1,
+                "infos": 0,
+                "debugs": 0,
+                "errors": 3
+            },
+            "name": "/home/emencia/projects/apps/PyHtmlChecker/tests/data_fixtures/html/invalid.erroneous-tag.html",
+            "path": "path-5.html"
+        },
+        {
+            "statistics": {
+                "warnings": 1,
+                "infos": 0,
+                "debugs": 0,
+                "errors": 0
+            },
+            "name": "/home/emencia/projects/apps/PyHtmlChecker/tests/data_fixtures/html/valid.warning.html",
+            "path": "path-6.html"
+        }
+    ],
+    "kind": "summary",
+    "metas": {
+        "generator": "0.2.0",
+        "created": "2020-01-20 02:15:18.638689",
+        "vnu": "18.11.5"
+    }
+}

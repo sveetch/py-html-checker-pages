@@ -1,0 +1,46 @@
+// Control To Action element mixins
+
+// Badge structure
+//
+// @arg {Number} $width [null]
+//   Width for flex basis and max width.
+//
+@mixin sv-cta(
+    $width: null,
+    $padding-x: null,
+    $padding-y: null,
+    $color: null,
+    $font-size: null,
+    $line-height: null,
+    $background: null,
+    $radius: $radius-pill,
+) {
+    display: inline-block;
+    padding-top: $padding-y;
+    padding-bottom: $padding-y;
+    padding-left: $padding-x;
+    padding-right: $padding-x;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: $color;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: center;
+    vertical-align: middle;
+    background: $background;
+    border-radius: $radius;
+    user-select: none;
+
+    &:focus,
+    &.focus {
+        outline: 0;
+    }
+
+    @each $name, $code in $palette {
+        &--#{$name}{
+            color: text-contrast($code);
+            background: $code !important;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{% extends "skeleton.html" %}
+
+{% macro pluralizer(value, single='', plural='s') -%}
+    {% if value > 1 %}{{ plural }}{% else %}{{ single }}{% endif %}
+{%- endmacro %}
+
+{% block head_css -%}{% assets CSS_BUNDLE %}
+    <link rel="stylesheet" href="{{ page_relative_position }}{{ ASSET_URL }}">
+{% endassets %}{%- endblock head_css %}
+
+{% block head_title %}Audit - {{ super() }}{% endblock head_title %}
+
+{%- block content -%}
+<div class="page-content audit-detail">
+    <div class="resume">
+        <div class="title">
+            <h2>Audit</h2>
+        </div>
+
+        {% with statistics=export.statistics, path_count=export.paths|length %}
+            {% include "exports/fragments/counters.html" %}
+        {% endwith %}
+    </div>
+
+    <div class="index">
+        {% for path in export.paths %}
+        {% with path_id=loop.index %}
+        <div class="report-item">
+            <div class="title">
+                <h3>{{ path.name }}</h3>
+                {% with statistics=path.statistics, ignore_empty=True %}
+                    {% include "exports/fragments/badges.html" %}
+                {% endwith %}
+            </div>
+
+            <div class="messages">
+                {% for message_row in path.data.messages %}
+                    {% with message=message_row, prefix_id=path_id, message_id=loop.index %}
+                        {% include "exports/fragments/message.html" %}
+                    {% endwith %}
+                {% endfor %}
+            </div>
+
+            {%- if sample_source -%}
+            <div class="report-source">
+                <h3 class="title">Source</h3>
+                {{ sample_source|highlight_html(linenos=True, identifier="source-"~path_id) }}
+            </div>
+            {%- endif -%}
+        </div>
+        {% endwith %}
+        {% endfor %}
+    </div>
+</div>
+{%- endblock content -%}
+
+
+{%- block footer_content -%}
+    {% with metas=export.metas %}
+        {% include "exports/fragments/report-metas.html" %}
+    {% endwith %}
+{%- endblock footer_content -%}

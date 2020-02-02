@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+// Tool functions and mixins
+@import "tools/rem";
+
+// Load settings
+@import "settings/colors";
+@import "settings/variables";
+
+// py-css-styleguide helpers
+@import "tools/styleguide_helpers";
+
+// Enable every available reference
+.styleguide-metas-references{
+    --auto: "true";
+}
+
+// 1. Colors
+// ---------
+
+// Every used colors, using $sv-color-background-palette map where color is in
+// item property 'background'
+.styleguide-reference-palette{
+    --structure: "flat";
+    --keys: "#{get-names($palette)}";
+    --values: "#{get-values($palette)}";
+}

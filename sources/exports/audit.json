@@ -1,0 +1,377 @@
+{
+    "paths": [
+        {
+            "statistics": {
+                "infos": 0,
+                "errors": 3,
+                "warnings": 1,
+                "debugs": 0
+            },
+            "name": "/home/emencia/projects/apps/PyHtmlChecker/tests/data_fixtures/html/invalid.warning.html",
+            "data": {
+                "messages": [
+                    {
+                        "type": "error",
+                        "message": "No \u201cp\u201d element in scope but a \u201cp\u201d end tag seen.",
+                        "hiliteLength": 4,
+                        "source": {
+                            "linestart": 11,
+                            "colstart": 5,
+                            "colend": 8,
+                            "extract": "</h1>\n    </p>\n</bod",
+                            "lineend": 11
+                        },
+                        "hiliteStart": 10
+                    },
+                    {
+                        "type": "error",
+                        "message": "End tag for  \u201cbody\u201d seen, but there were unclosed elements.",
+                        "hiliteLength": 7,
+                        "source": {
+                            "linestart": 12,
+                            "colstart": 1,
+                            "colend": 7,
+                            "extract": "\n    </p>\n</body>\n</htm",
+                            "lineend": 12
+                        },
+                        "hiliteStart": 10
+                    },
+                    {
+                        "type": "error",
+                        "message": "Unclosed element \u201cdiv\u201d.",
+                        "hiliteLength": 5,
+                        "source": {
+                            "linestart": 9,
+                            "colstart": 5,
+                            "colend": 9,
+                            "extract": "body>\n    <div>\n     ",
+                            "lineend": 9
+                        },
+                        "hiliteStart": 10
+                    },
+                    {
+                        "message": "Consider adding a \u201clang\u201d attribute to the \u201chtml\u201d start tag to declare the language of this document.",
+                        "hiliteLength": 7,
+                        "hiliteStart": 10,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 1,
+                            "colstart": 16,
+                            "colend": 6,
+                            "extract": "type html>\n<html>\n<head",
+                            "lineend": 2
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "statistics": {
+                "infos": 0,
+                "errors": 0,
+                "warnings": 8,
+                "debugs": 0
+            },
+            "name": "https://www.emencia.com/fr/",
+            "data": {
+                "messages": [
+                    {
+                        "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                        "hiliteLength": 70,
+                        "hiliteStart": 10,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 27,
+                            "colstart": 807,
+                            "colend": 876,
+                            "extract": "></script><script type=\"text/javascript\" src=\"/static/js/modernizr.7d81c20b.js\"></scri",
+                            "lineend": 27
+                        }
+                    },
+                    {
+                        "message": "The \u201cnavigation\u201d role is unnecessary for element \u201cnav\u201d.",
+                        "hiliteLength": 39,
+                        "hiliteStart": 10,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 37,
+                            "colstart": 27,
+                            "colend": 65,
+                            "extract": "stickier\"><nav class=\"top-bar\" role=\"navigation\"><ul cl",
+                            "lineend": 37
+                        }
+                    },
+                    {
+                        "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                        "hiliteLength": 31,
+                        "hiliteStart": 10,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 148,
+                            "colstart": 1,
+                            "colend": 31,
+                            "extract": "nav>\n\n\n\n\n\n<script type=\"text/javascript\">\n    w",
+                            "lineend": 148
+                        }
+                    },
+                    {
+                        "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                        "hiliteLength": 64,
+                        "hiliteStart": 10,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 164,
+                            "colstart": 10,
+                            "colend": 73,
+                            "extract": "\n</script><script type=\"text/javascript\" src=\"/static/js/app.ba05d1cf.js\"></scri",
+                            "lineend": 164
+                        }
+                    },
+                    {
+                        "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                        "hiliteLength": 31,
+                        "hiliteStart": 10,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 164,
+                            "colstart": 83,
+                            "colend": 113,
+                            "extract": "></script><script type=\"text/javascript\">\n    /",
+                            "lineend": 164
+                        }
+                    },
+                    {
+                        "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                        "hiliteLength": 31,
+                        "hiliteStart": 10,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 186,
+                            "colstart": 40,
+                            "colend": 70,
+                            "extract": "he Way --><script type=\"text/javascript\">\n    w",
+                            "lineend": 186
+                        }
+                    },
+                    {
+                        "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                        "hiliteLength": 79,
+                        "hiliteStart": 10,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 188,
+                            "colstart": 10,
+                            "colend": 88,
+                            "extract": "\n</script><script type=\"text/javascript\" src=\"https://gl.hostcg.com/js/genlead.js\" defer></scri",
+                            "lineend": 188
+                        }
+                    },
+                    {
+                        "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                        "hiliteLength": 31,
+                        "hiliteStart": 10,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 188,
+                            "colstart": 255,
+                            "colend": 285,
+                            "extract": " Code --><script type=\"text/javascript\">\n  (fun",
+                            "lineend": 188
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "statistics": {
+                "infos": 0,
+                "errors": 0,
+                "warnings": 0,
+                "debugs": 1
+            },
+            "name": "/home/emencia/projects/apps/PyHtmlChecker/tests/data_fixtures/html/valid.basic.html",
+            "data": {
+                "messages": [
+                    {
+                        "message": "There was not any log report for this path.",
+                        "type": "debug"
+                    }
+                ]
+            }
+        },
+        {
+            "statistics": {
+                "infos": 0,
+                "errors": 4,
+                "warnings": 1,
+                "debugs": 0
+            },
+            "name": "http://perdu.com/",
+            "data": {
+                "messages": [
+                    {
+                        "message": "The character encoding was not declared. Proceeding using \u201cwindows-1252\u201d.",
+                        "type": "error",
+                        "source": {}
+                    },
+                    {
+                        "type": "error",
+                        "message": "Start tag seen without seeing a doctype first. Expected \u201c<!DOCTYPE html>\u201d.",
+                        "hiliteLength": 6,
+                        "source": {
+                            "linestart": 1,
+                            "colstart": 1,
+                            "colend": 6,
+                            "extract": "<html><head>",
+                            "lineend": 1
+                        },
+                        "hiliteStart": 0
+                    },
+                    {
+                        "type": "error",
+                        "message": "Element \u201cpre\u201d not allowed as child of element \u201cstrong\u201d in this context. (Suppressing further errors from this subtree.)",
+                        "hiliteLength": 5,
+                        "source": {
+                            "linestart": 1,
+                            "colstart": 138,
+                            "colend": 142,
+                            "extract": "2><strong><pre>    * ",
+                            "lineend": 1
+                        },
+                        "hiliteStart": 10
+                    },
+                    {
+                        "type": "error",
+                        "message": "Bad character \u201c-\u201d after \u201c<\u201d. Probable cause: Unescaped \u201c<\u201d. Try escaping it as \u201c&lt;\u201d.",
+                        "hiliteLength": 2,
+                        "source": {
+                            "linestart": 1,
+                            "colstart": 149,
+                            "colend": 150,
+                            "extract": "pre>    * <----- v",
+                            "lineend": 1
+                        },
+                        "hiliteStart": 10
+                    },
+                    {
+                        "message": "Consider adding a \u201clang\u201d attribute to the \u201chtml\u201d start tag to declare the language of this document.",
+                        "hiliteLength": 6,
+                        "hiliteStart": 0,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 1,
+                            "colstart": 1,
+                            "colend": 6,
+                            "extract": "<html><head>",
+                            "lineend": 1
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "statistics": {
+                "infos": 0,
+                "errors": 3,
+                "warnings": 1,
+                "debugs": 0
+            },
+            "name": "/home/emencia/projects/apps/PyHtmlChecker/tests/data_fixtures/html/invalid.erroneous-tag.html",
+            "data": {
+                "messages": [
+                    {
+                        "type": "error",
+                        "message": "No \u201cp\u201d element in scope but a \u201cp\u201d end tag seen.",
+                        "hiliteLength": 4,
+                        "source": {
+                            "linestart": 11,
+                            "colstart": 5,
+                            "colend": 8,
+                            "extract": "</h1>\n    </p>\n</bod",
+                            "lineend": 11
+                        },
+                        "hiliteStart": 10
+                    },
+                    {
+                        "type": "error",
+                        "message": "End tag for  \u201cbody\u201d seen, but there were unclosed elements.",
+                        "hiliteLength": 7,
+                        "source": {
+                            "linestart": 12,
+                            "colstart": 1,
+                            "colend": 7,
+                            "extract": "\n    </p>\n</body>\n</htm",
+                            "lineend": 12
+                        },
+                        "hiliteStart": 10
+                    },
+                    {
+                        "type": "error",
+                        "message": "Unclosed element \u201cdiv\u201d.",
+                        "hiliteLength": 5,
+                        "source": {
+                            "linestart": 9,
+                            "colstart": 5,
+                            "colend": 9,
+                            "extract": "body>\n    <div>\n     ",
+                            "lineend": 9
+                        },
+                        "hiliteStart": 10
+                    },
+                    {
+                        "message": "Consider adding a \u201clang\u201d attribute to the \u201chtml\u201d start tag to declare the language of this document.",
+                        "hiliteLength": 7,
+                        "hiliteStart": 10,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 1,
+                            "colstart": 16,
+                            "colend": 6,
+                            "extract": "type html>\n<html>\n<head",
+                            "lineend": 2
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "statistics": {
+                "infos": 0,
+                "errors": 0,
+                "warnings": 1,
+                "debugs": 0
+            },
+            "name": "/home/emencia/projects/apps/PyHtmlChecker/tests/data_fixtures/html/valid.warning.html",
+            "data": {
+                "messages": [
+                    {
+                        "message": "Consider adding a \u201clang\u201d attribute to the \u201chtml\u201d start tag to declare the language of this document.",
+                        "hiliteLength": 7,
+                        "hiliteStart": 10,
+                        "type": "warning",
+                        "source": {
+                            "linestart": 1,
+                            "colstart": 16,
+                            "colend": 6,
+                            "extract": "type html>\n<html>\n<head",
+                            "lineend": 2
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "kind": "audit",
+    "statistics": {
+        "errors": 10,
+        "infos": 0,
+        "debugs": 1,
+        "warnings": 12
+    },
+    "metas": {
+        "vnu": "18.11.5",
+        "generator": "0.2.0",
+        "created": "2020-01-20 02:13:16.584870"
+    },
+    "data": null
+}

@@ -1,0 +1,123 @@
+{
+    "statistics": {
+        "warnings": 8,
+        "infos": 0,
+        "debugs": 0,
+        "errors": 0
+    },
+    "name": "http://localhost/project/apps/tests/data_fixtures/html/invalid.warning.html",
+    "kind": "report",
+    "metas": {
+        "generator": "0.2.0",
+        "created": "2020-01-20 02:15:18.638689",
+        "vnu": "18.11.5"
+    },
+    "data": {
+        "messages": [
+            {
+                "hiliteLength": 70,
+                "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                "source": {
+                    "extract": "></script><script type=\"text/javascript\" src=\"/static/js/modernizr.7d81c20b.js\"></scri",
+                    "colend": 876,
+                    "lineend": 27,
+                    "colstart": 807,
+                    "linestart": 27
+                },
+                "hiliteStart": 10,
+                "type": "warning"
+            },
+            {
+                "hiliteLength": 39,
+                "message": "The \u201cnavigation\u201d role is unnecessary for element \u201cnav\u201d.",
+                "source": {
+                    "extract": "stickier\"><nav class=\"top-bar\" role=\"navigation\"><ul cl",
+                    "colend": 65,
+                    "lineend": 37,
+                    "colstart": 27,
+                    "linestart": 37
+                },
+                "hiliteStart": 10,
+                "type": "warning"
+            },
+            {
+                "hiliteLength": 31,
+                "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                "source": {
+                    "extract": "nav>\n\n\n\n\n\n<script type=\"text/javascript\">\n    w",
+                    "colend": 31,
+                    "lineend": 148,
+                    "colstart": 1,
+                    "linestart": 148
+                },
+                "hiliteStart": 10,
+                "type": "warning"
+            },
+            {
+                "hiliteLength": 64,
+                "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                "source": {
+                    "extract": "\n</script><script type=\"text/javascript\" src=\"/static/js/app.ba05d1cf.js\"></scri",
+                    "colend": 73,
+                    "lineend": 164,
+                    "colstart": 10,
+                    "linestart": 164
+                },
+                "hiliteStart": 10,
+                "type": "warning"
+            },
+            {
+                "hiliteLength": 31,
+                "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                "source": {
+                    "extract": "></script><script type=\"text/javascript\">\n    /",
+                    "colend": 113,
+                    "lineend": 164,
+                    "colstart": 83,
+                    "linestart": 164
+                },
+                "hiliteStart": 10,
+                "type": "warning"
+            },
+            {
+                "hiliteLength": 31,
+                "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                "source": {
+                    "extract": "he Way --><script type=\"text/javascript\">\n    w",
+                    "colend": 70,
+                    "lineend": 186,
+                    "colstart": 40,
+                    "linestart": 186
+                },
+                "hiliteStart": 10,
+                "type": "warning"
+            },
+            {
+                "hiliteLength": 79,
+                "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                "source": {
+                    "extract": "\n</script><script type=\"text/javascript\" src=\"https://gl.hostcg.com/js/genlead.js\" defer></scri",
+                    "colend": 88,
+                    "lineend": 188,
+                    "colstart": 10,
+                    "linestart": 188
+                },
+                "hiliteStart": 10,
+                "type": "warning"
+            },
+            {
+                "hiliteLength": 31,
+                "message": "The \u201ctype\u201d attribute is unnecessary for JavaScript resources.",
+                "source": {
+                    "extract": " Code --><script type=\"text/javascript\">\n  (fun",
+                    "colend": 285,
+                    "lineend": 188,
+                    "colstart": 255,
+                    "linestart": 188
+                },
+                "hiliteStart": 10,
+                "type": "warning"
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+/*
+ * Badge item
+ *
+ */
+
+.badges{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+
+    .badge{
+        margin-right: 0.5rem;
+        @include sv-flex(0, 0, auto);
+    }
+}
+
+.badge{
+    @include sv-cta(
+        $padding-x: 0.3rem,
+        $padding-y: 0.2rem,
+        $color: $clear,
+        $font-size: 0.8rem,
+        $line-height: 1.1,
+        $background: $primary,
+    );
+}

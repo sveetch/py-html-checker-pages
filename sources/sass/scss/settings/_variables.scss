@@ -1,0 +1,47 @@
+/*
+ * Global settings
+ */
+
+// Try to use the better system fonts
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// Basic font settings
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1rem;
+$font-weight-base: normal;
+$line-height-base: 1.1;
+
+// Radius variables
+$radius-square: 0.1rem;
+$radius-pill: 0.3rem;
+$radius-round: 100%;
+
+// Automatic contrast value
+$text-contrast-dark: $dark;
+$text-contrast-light: $clear;
+
+$body-color: $slate;
+$body-bg: $light;
+
+$headings-margin-bottom: 0.75rem;
+
+$paragraph-margin-bottom: 0.5rem;
+
+$font-weight-bolder: bold;
+
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: $primary;
+
+$breakpoints: (
+  'small': 320px,
+  'medium': 767px,
+  'large': 1023px,
+);
+
+// One pixel shortcut
+$onepixel: 0.0625rem;
+
+// Common shadow for card boxes
+$card-shadow: 2px 2px 2px rgba($darkest, 0.1), -1px 0 2px rgba($darkest, 0.05);

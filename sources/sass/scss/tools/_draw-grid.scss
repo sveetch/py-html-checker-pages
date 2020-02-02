@@ -1,0 +1,23 @@
+// Draw a background grid in pure CSS
+@mixin draw-grid(
+    $line-color: #f0f0f0,
+    $border-color: #e0e0e0,
+){
+    background: linear-gradient(-90deg, $line-color $onepixel, transparent $onepixel),
+        linear-gradient($line-color $onepixel, transparent $onepixel),
+        linear-gradient(-90deg, $line-color $onepixel, transparent $onepixel),
+        linear-gradient($line-color $onepixel, transparent $onepixel),
+        linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px),
+        linear-gradient(-90deg, transparent $onepixel, transparent $onepixel),
+        linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px),
+        linear-gradient(transparent $onepixel, transparent $onepixel), transparent;
+    background-size: 10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px;
+    border: $onepixel solid $border-color;
+}

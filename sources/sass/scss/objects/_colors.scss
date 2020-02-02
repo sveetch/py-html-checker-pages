@@ -1,0 +1,13 @@
+/*
+ * Shortand objects about colors
+ */
+
+// Palette color helpers
+@each $name, $code in $palette {
+    .text-#{$name}{
+        color: $code !important;
+    }
+    .bg-#{$name}{
+        background: $code !important;
+    }
+}

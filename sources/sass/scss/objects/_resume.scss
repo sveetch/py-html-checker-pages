@@ -1,0 +1,57 @@
+/*
+ * Page resume
+ *
+ */
+
+.resume {
+    margin: 0 0 2rem 0;
+    background: $lightest;
+
+
+    .title {
+        margin: 0;
+        padding: 1rem 1.5rem;
+
+        h2 {
+            margin: 0;
+        }
+
+        code {
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+    }
+
+    .counters {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        & > li {
+            @include sv-flex(1, 1, 25%);
+            padding: 1rem;
+            font-size: 0.8rem;
+            text-align: center;
+            background: $clear;
+            border: $onepixel solid $smoke;
+
+            strong {
+                display: block;
+                font-weight: bold;
+                font-size: 1.4rem;
+            }
+
+            & + li {
+                border-left: 0;
+            }
+        }
+
+        // Variant for 5 columns instead of default 4
+        &--alt{
+            & > li {
+                @include sv-flex(1, 1, 20%);
+            }
+        }
+    }
+}

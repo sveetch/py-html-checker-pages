@@ -1,0 +1,20 @@
+$text-contrast-dark: black !default;
+$text-contrast-light: white !default;
+
+// Automatic text contrast
+//
+// From given colour code, return either a dark or light color
+//
+// Copied from article:
+// https://medium.com/@jonnykates/automating-colour-contrast-ratios-with-sass-e201f3b52797
+//
+@function text-contrast($n) {
+    $color-brightness: round((red($n)*299)+(green($n)*587)+(blue($n)*114)/1000);
+    $light-color: round((red(#ffffff)*299)+(green(#ffffff)*587)+(blue(#ffffff)*114)/1000);
+
+    @if abs($color-brightness) < ($light-color/2){
+        @return $text-contrast-light;
+    } @else {
+        @return $text-contrast-dark;
+    }
+}

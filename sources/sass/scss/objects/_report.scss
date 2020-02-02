@@ -1,0 +1,127 @@
+/*
+ * Path report
+ *
+ */
+
+.report-item {
+    background: $clear;
+    box-shadow: $card-shadow;
+    border-bottom-left-radius: 0.0625rem;
+    border-bottom-right-radius: 0.0625rem;
+
+    & > .title {
+        padding: 1rem;
+        color: $clear;
+        background-color: $dark;
+        border-bottom: $onepixel solid $smoke;
+
+        h3{
+            margin: 0 0 1rem 0;
+            font-family: $font-family-monospace;
+            font-size: 0.9rem;
+        }
+    }
+
+    .messages {
+        .message-item {
+            position: relative;
+            padding: 1.4rem 1rem 1rem 0;
+            display: flex;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                border-right: 0.3125rem solid $clear;
+            }
+
+            // Level color variants
+            &.info {
+                &::before {
+                    border-right: 0.3125rem solid $info;
+                }
+            }
+            &.warning {
+                &::before {
+                    border-right: 0.3125rem solid $warning;
+                }
+            }
+            &.error {
+                &::before {
+                    border-right: 0.3125rem solid $error;
+                }
+            }
+            &.debug {
+                &::before {
+                    border-right: 0.3125rem solid $debug;
+                }
+            }
+
+            .anchor {
+                @include sv-flex(1, 0, 3.2rem);
+                padding: 0 0.5rem 0 0.5rem;
+                display: block;
+                font-size: 0.8rem;
+                font-weight: bold;
+                text-align: right;
+            }
+
+            .content{
+                @include sv-flex(1, 1, calc(100% - 3.2rem));
+
+                // Row message from validator
+                .msg {
+                    margin-bottom: 0.5rem;
+                    font-weight: bold;
+                }
+
+                .source {
+                    // Divider
+                    & > * + *{
+                        margin-top: 0.8rem;
+                    }
+
+                    .coords {
+                        font-size: 0.9rem;
+                        color: $secondary;
+                    }
+                    .extract {
+                        pre {
+                            margin: 0;
+                            padding: 0.5rem;
+                            font-size: 0.9rem;
+                            background: $lightest;
+                            overflow: auto;
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+
+            // Item divider
+            & + .message-item {
+                border-top: $onepixel solid $smoke;
+            }
+        }
+    }
+}
+
+
+// Source code
+.report-source{
+    font-size: 0.8rem;
+    font-family: $font-family-monospace;
+    overflow: auto;
+
+    & > .title{
+        margin: 0;
+        padding: 1rem;
+        color: $clear;
+        background-color: scale-color($dark, $lightness: 20%);
+        border-top: $onepixel solid $smoke;
+        border-bottom: $onepixel solid $smoke;
+    }
+}

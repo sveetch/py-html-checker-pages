@@ -1,0 +1,70 @@
+/*
+ * Styleguide page and elements
+ */
+
+
+.styleguide {
+    margin: 2rem 1rem 2rem 1rem;
+
+    h1 {
+        padding: 3rem 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__block{
+        @include sv-flex(1, 0, 100%);
+        padding: 1rem;
+        background: $clear;
+
+        h2 {
+            padding: 2rem 0;
+        }
+
+        & + & {
+            margin-top: 2rem;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__palette {
+        $palette-selector: &;
+
+        #{$palette-selector}-item {
+            $item-selector: &;
+
+            @include sv-flex(1, 0, 20%);
+            padding: rem-calc(8px);
+        }
+
+        // Iterate through color palette to build a modifier which define
+        // values for each color
+        @each $key, $value in $palette{
+            #{$palette-selector}-item--#{$key}{
+                #{$palette-selector}-color{
+                    background-color: map-get($palette, $key);
+                }
+
+                #{$palette-selector}-code::before{
+                    content: "#{map-get($palette, $key)}";
+                }
+            }
+        }
+
+        #{$palette-selector}-color {
+            width: 100%;
+            height: rem-calc(48px);
+        }
+    }
+
+    &__badges{
+        .badge{
+            margin: 0 1rem 1rem 0;
+        }
+    }
+}

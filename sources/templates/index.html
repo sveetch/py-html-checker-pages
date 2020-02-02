@@ -1,0 +1,13 @@
+{% extends "skeleton.html" %}
+
+{%- block content -%}
+    <h1>{{ page_title }}</h1>
+
+    <ul>
+    {%- for page in pages -%}
+        <li>
+            <a href="{{ page_relative_position }}{{ page.destination }}">{{ page.title }}</a>
+        </li>
+    {%- endfor -%}
+    </ul>
+{%- endblock content -%}
