@@ -50,10 +50,7 @@ def highlight_html_filter(source, linenos=False, linenostart=1, identifier=None)
             "anchorlinenos": True,
         })
 
-    # NOTE: Not sure about to replace breakline, maybe replace it with
-    #       .replace("\r\n", "↩\r\n").replace("\n", "↩\n") instead
     return highlight(
-        #source.replace("\r\n", "↩").replace("\n", "↩"),
         source,
         HtmlLexer(),
         HtmlFormatter(**opts)

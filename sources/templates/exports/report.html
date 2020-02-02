@@ -26,15 +26,15 @@
         <div class="report-item">
             <div class="messages">
                 {% for message_row in export.data.messages %}
-                    {% with message=message_row, message_id=loop.index %}
+                    {% with message=message_row, message_id=loop.index, source_enabled=export.source %}
                         {% include "exports/fragments/message.html" %}
                     {% endwith %}
                 {% endfor %}
             </div>
-            {%- if sample_source -%}
+            {%- if export.source -%}
             <div class="report-source">
                 <h3 class="title">Source</h3>
-                {{ sample_source|highlight_html(linenos=True, identifier="source") }}
+                {{ export.source|highlight_html(linenos=True, identifier="source") }}
             </div>
             {%- endif -%}
         </div>
